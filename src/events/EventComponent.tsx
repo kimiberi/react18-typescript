@@ -25,7 +25,6 @@ const EventComponent: React.FC = () => {
 
             <h3>Drag Event Handlers</h3>
             <div draggable onDragStart={onDragStartEvent}>Drag Me!</div>
-
         </>
     )
 }

@@ -25,7 +25,7 @@ export const Child = ({ color, onClickMe }: ChildProps) => {
 // However, TS doesn't know that we made a React component, 
 // so it thinks that 'Child' will not have these properties!!
 
-// ANOTHER WAY to define FC as with TS
+// ANOTHER WAY to define FC with TS
 // Now it will become a PURE React Function Component
 // it might have properties assigned like (1) propTypes (2) displayName (3) defaultProps (4) contextTypes
 // it will receive props of type 'ChildProps'

@@ -1,11 +1,10 @@
 import React from 'react'
-import Parent from './props/Parent'
+import UserSearch from './state/2 UserSearch'
 
 const App = () => {
   return (
     <>
-      <div>App</div>
-      <Parent />
+      <UserSearch />
     </>
   )
 }

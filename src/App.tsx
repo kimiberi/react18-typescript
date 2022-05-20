@@ -1,10 +1,10 @@
 import React from 'react'
-import UserSearch from './state/2 UserSearch'
+import EventComponent from './events/EventComponent'
 
 const App = () => {
   return (
     <>
-      <UserSearch />
+      <EventComponent />
     </>
   )
 }

@@ -28,6 +28,10 @@ const UserSearch: React.FC = () => {
         setUser(foundUser);
     }
 
+    const onChangeEvent = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setName(e.target.value);
+    }
+
     useEffect(() => {
         // auto focus in <input /> field
         if (!inputRef.current) {
@@ -44,9 +48,11 @@ const UserSearch: React.FC = () => {
 
             {user && <p>{user?.name} , {user?.age}</p>}
 
-            <input ref={inputRef} value={name} onChange={(e) => setName(e.target.value)} />
+            <input ref={inputRef} value={name} onChange={onChangeEvent} />
             <button onClick={onSearch}>Search</button>
 
+            <br /><br />
+            <hr />
         </>
     )
 }

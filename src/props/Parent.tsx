@@ -12,6 +12,9 @@ const Parent = () => {
 
             {/* NOTICE declaring this as PURE Functional Component, we can use children */}
             <ChildAsFC color='ocean blue' onClickMe={() => console.log('Clicked ChildAsFC')} />
+
+            <br /><br />
+            <hr />
         </>
     )
 }
